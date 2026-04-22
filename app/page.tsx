@@ -31,7 +31,7 @@ export default function Home() {
           ),
         )}
       </main>
-      <footer className="text-sm text-gray-200">
+      <footer className="text-sm text-gray-200 pb-18">
         Developed by{" "}
         <Link
           href="https://instagram.com/mixlab.wav"
