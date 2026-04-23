@@ -27,7 +27,7 @@ export default function Card({ item }: CardProps) {
         height={48}
         className="rounded-full"
       />
-      <span className="font-medium text-sm">{title}</span>
+      <span className="font-medium text-sm px-2 text-center">{title}</span>
       <div className="pr-1 opacity-50">
         <EllipsisVertical className="h-4" />
       </div>
