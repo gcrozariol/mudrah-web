@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Camera,
-  Download,
-  FileText,
-  Mail,
-  Music,
-  Sparkles,
-} from "lucide-react";
+import { Download, FileText, Mail, Music, Sparkles } from "lucide-react";
 
 type DownloadItem = {
   title: string;
