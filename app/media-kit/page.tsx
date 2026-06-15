@@ -190,7 +190,7 @@ export default function Page() {
             </p>
             <Link
               href="mailto:marketing@mudrahoficial.com.br?subject=Contratação%20Mudrah"
-              className="mt-5 inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-4 text-xs font-bold uppercase tracking-wide text-black transition hover:bg-black/80"
+              className="mt-5 inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-4 text-xs font-bold uppercase tracking-wide text-black transition hover:bg-white/85"
             >
               <Mail size={18} />
               marketing@mudrahoficial.com.br
@@ -256,9 +256,9 @@ export default function Page() {
                 alt={photo.alt}
                 width={700}
                 height={900}
-                className="aspect-4/5 rounded-3xl object-cover transition duration-500 group-hover:scale-105"
+                className="aspect-4/5 rounded-3xl object-cover transition duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-x-2 bottom-2 rounded-b-3xl rounded-t-xl bg-gradient-to-t from-black/80 via-black/40 to-transparent px-4 pb-4 pt-8">
+              <div className="absolute inset-x-2 bottom-2 rounded-b-3xl rounded-t-xl bg-linear-to-t from-black/80 via-black/40 to-transparent px-4 pb-4 pt-8">
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/90">
                   {photo.description}
                 </p>
