@@ -38,7 +38,7 @@ const pressDownloads: DownloadItem[] = [
   {
     title: "Release da banda — PDF",
     description: "Biografia, ficha técnica e informações para contratação.",
-    href: "/media-kit/mudrah-release.pdf",
+    href: "https://canva.link/2hzmts3x8p0y78c",
   },
 ];
 
@@ -72,7 +72,10 @@ const highlights = [
 
 function validateMediaKitData() {
   const downloadLinksAreValid = pressDownloads.every(
-    (item) => item.title && item.description && item.href.startsWith("/"),
+    (item) =>
+      item.title &&
+      item.description &&
+      (item.href.startsWith("/") || item.href.startsWith("https://")),
   );
   const photosAreValid = artistPhotos.every(
     (photo) => photo.src.startsWith("/") && photo.alt.length > 0,
@@ -135,7 +138,9 @@ export default function Page() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/media-kit/mudrah-release.pdf"
+              href="https://canva.link/2hzmts3x8p0y78c"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-5 py-4 text-sm font-bold uppercase tracking-wide text-black transition hover:bg-white/85"
             >
               <FileText size={18} />
@@ -217,6 +222,8 @@ export default function Page() {
               key={item.title}
               href={item.href}
               download
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-between gap-4 rounded-3xl border border-white/10 bg-white/10 p-5 backdrop-blur transition hover:-translate-y-1 hover:border-white/25 hover:bg-white/15"
             >
               <span>
