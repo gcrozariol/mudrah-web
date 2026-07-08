@@ -25,10 +25,10 @@ export default function CardFeatured({ item }: CardFeaturedProps) {
         alt=""
         width={600}
         height={600}
-        className="rounded-[20px] border-[1.5px] border-gray-200/20 object-cover max-h-75 lg:max-h-150"
+        className="rounded-[20px] border-[1.5px] border-gray-200/20 object-cover aspect-square"
       />
       <div className="flex w-full py-5">
-        <span className="font-medium text-sm text-center flex-1 pl-12">
+        <span className="font-medium text-sm text-center flex-1 pl-6">
           {title}
         </span>
         <div className="pr-1 opacity-50">
