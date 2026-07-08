@@ -21,11 +21,18 @@
   ],
   "projects": [
     {
+      "id": 0,
+      "href": "https://distrokid.com/hyperfollow/mudrah/jogo-de-palavras",
+      "image": "/jogo-de-palavras-single-cover.png",
+      "title": "Faça já o pre-save do single Jogo de Palavras!",
+      "featured": true
+    },
+    {
       "id": 1,
       "href": "https://distrokid.com/hyperfollow/mudrah/paradigmas?ref=release",
       "image": "/paradigmas-single-cover.png",
       "title": "Novo single Paradigmas já disponível!",
-      "featured": true
+      "featured": false
     },
     {
       "id": 2,
