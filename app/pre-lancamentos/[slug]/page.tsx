@@ -3,26 +3,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { previews } from "@/data.json";
 
-const releases = {
-  "farinha-do-mesmo-saco": {
-    title: "Farinha do Mesmo Saco",
-    artist: "Mudrah",
-    cover: "/farinha-do-mesmo-saco-single-cover.png",
-    audio: "/pre-lancamentos/farinha-do-mesmo-saco.mp3",
-    preSaveUrl:
-      "https://distrokid.com/hyperfollow/mudrah/farinha-do-mesmo-saco",
-  },
-} as const;
-
-type ReleaseSlug = keyof typeof releases;
+type ReleaseSlug = keyof typeof previews;
 
 function isReleaseSlug(slug: string): slug is ReleaseSlug {
-  return slug in releases;
+  return slug in previews;
 }
 
 export function generateStaticParams() {
-  return Object.keys(releases).map((slug) => ({ slug }));
+  return Object.keys(previews).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -34,7 +24,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const release = releases[slug];
+  const release = previews[slug];
 
   return {
     title: `${release.title} | ${release.artist}`,
@@ -51,7 +41,7 @@ export default async function PreReleasePage({
     notFound();
   }
 
-  const release = releases[slug];
+  const release = previews[slug];
 
   return (
     <main className="relative isolate flex min-h-dvh w-full items-center justify-center overflow-hidden px-5 py-10 text-center">

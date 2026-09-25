@@ -97,5 +97,14 @@
       "title": "Ouça Janela da Alma!",
       "featured": false
     }
-  ]
+  ],
+  "previews": {
+    "farinha-do-mesmo-saco": {
+      "title": "Farinha do Mesmo Saco",
+      "artist": "Mudrah",
+      "cover": "/pre-lancamentos/farinha-do-mesmo-saco-single-cover.png",
+      "audio": "/pre-lancamentos/farinha-do-mesmo-saco-preview.mp3",
+      "preSaveUrl": "https://distrokid.com/hyperfollow/mudrah/farinha-do-mesmo-saco"
+    }
+  }
 }
